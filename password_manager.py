@@ -1,2 +1,3 @@
-# This project is going to be about running a password manager.
-# We are creating this project because we want people to be able to manage their passwords in a simpler way.
+#this program will prompt the user for which application they would like to remember their passwords for. 
+#it will also return the passowrds, emails, and usernames they enter for their applications
+#yes
