@@ -4,8 +4,6 @@ accounts = [
   ['facebook', 'Charles', 'person@whatever', '1234'],
   ['instagram', 'Asiah', 'person@whatever', '1243'],
 ]
-sarr = [str(a) for a in accounts]
-print(",". join(sarr))
 print("Welcome! ")
 while True:
   answer = input("Which would you like to do? [save, change, view] ")
