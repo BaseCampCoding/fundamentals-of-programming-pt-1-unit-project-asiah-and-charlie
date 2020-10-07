@@ -8,7 +8,7 @@ A lot of password managers exist, but they are all on a network and someone may 
 
 -Save Function: We would like for the program to save the user's input for their information.
 
--Change Function:  We would like the program to be able to change a save username, password, or email.
+-Chnge Function:  We would like the program to be able to change a save username, password, or email.
 
 -View Function:  We would like the program to be able to show the user their information of the ask for it.
 # Daily Goals
