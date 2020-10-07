@@ -9,7 +9,7 @@ while True:
       username_1 = input(f"What's your username for {application_1}? ")
       email_1 = input(f"What's your email for {application_1}? ")
       password_1 = input(f"What's your password for {application_1}? ")
-      accounts.append({'name': application_1, 'username': username_1, 'email': email_1, 'password': password_1})
+      accounts.append({'account': application_1, 'username': username_1, 'email': email_1, 'password': password_1})
       break
   elif answer == 'change':
     pass  
