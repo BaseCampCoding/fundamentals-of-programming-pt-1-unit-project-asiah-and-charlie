@@ -1,5 +1,5 @@
 #this program will prompt the user for which application they would like to remember their passwords for. 
-#it will also return the passowrds, emails, and usernames they enter for their applications
+#it will also return the passowrds, emails, and usernames they enter for their apps
 import computing
 accounts = []
 print("Welcome! ")
