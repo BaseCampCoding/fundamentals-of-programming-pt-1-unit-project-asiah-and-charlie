@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+#this program will prompt the user for which application they would like to remember their passwords for. 
+#it will also return the passowrds, emails, and usernames they enter for their applications
+>>>>>>> 005e6297cadd0887b5084a6dea63092a108058c3
 accounts = [
   ['facebook', 'Charles', 'person@whatever', '1234'],
   ['instagram', 'Asiah', 'person@whatever', '1243'],
@@ -21,7 +26,11 @@ while True:
       for i in accounts:
         print(accounts[0])
       break
+<<<<<<< HEAD
     elif cat == application_2:
+=======
+    elif cat == application_1:
+>>>>>>> 005e6297cadd0887b5084a6dea63092a108058c3
       for i in accounts:
         print(accounts[1])
         break
