@@ -1,5 +1,4 @@
-def printing_info(info: str, account: str)-> float:
-    for inf, x in account:
-        if inf == account:
-            return True
-    return False
+def get_account(accounts, account_name: str):
+    for account in accounts:
+        if accounts["account"] == account_name:
+            return account
