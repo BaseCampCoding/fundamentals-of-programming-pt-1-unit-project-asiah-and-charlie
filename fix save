@@ -12,9 +12,7 @@ while True:
       accounts.append({'account': application_1, 'username': username_1, 'email': email_1, 'password': password_1})
       break
   elif answer == 'change':
-  while True:
-  
-    pass  
+        pass  
   elif answer == 'view':
     info = input("What account are you needing information for? ")
     if computing.printing_info(info, accounts):
