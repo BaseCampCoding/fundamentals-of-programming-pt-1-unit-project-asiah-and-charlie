@@ -7,3 +7,4 @@ def check_for_pass(accounts, password: str):
     for pw in accounts:
         if pw["password"] == password:
             return True
+
