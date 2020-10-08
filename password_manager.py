@@ -1,8 +1,5 @@
 
 
-
-
-
 import computing
 accounts = []
 print("Welcome to your password manager! ")
@@ -13,7 +10,12 @@ while True:
       application_1 = input("What application are you using? ")
       check_account = computing.check_for_account(accounts, application_1)
       if check_account == False:
-        print("Looks like you've already stored information for this account. Perhaps you wanted to change? ")
+        print("Looks like you've already stored information for this account. ")
+        variable = input("Would you like to save anyways? [Y/N] ").upper()
+        if variable == 'Y':
+          break
+        else:
+          continue
       else:
         break
   
