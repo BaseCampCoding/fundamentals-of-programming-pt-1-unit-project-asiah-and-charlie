@@ -1,10 +1,16 @@
+import json
+with open("passwords.json") as file:
+  json.load(file)
 
-
-import computing
 accounts = []
+import computing
 print("Welcome to your password manager! ")
 while True:
-  answer = input("Which would you like to do? [save, view] ")
+  answer = input("""Which would you like to do?
+    -save 
+    -view 
+    -exit
+               """)
   if answer == 'save':
     while True:
       application_1 = input("What application are you using? ")
@@ -51,13 +57,17 @@ while True:
           password_1 = input(f"What's your password for {application_1}? ")
       print("Everything saved successfully!")
       accounts.append({'account': application_1, 'username': username_1, 'email': email_1, 'password': password_1})
+      with open("passwords.json", "a") as file:
+        json.dump(accounts, file)
+        
         
   elif answer == 'view':
-    info = input("What account are you needing information for? ")
-    account =  computing.get_account_info(accounts, info)
-    if account:
-      print(account)
-    else:
-      print("Sorry we couldn't find that account please try again. ")
+    with open('passwords.json') as file:
+      info = json.load(file)
+      print(info)
+      
+  elif answer == 'exit':
+    break
   else:
     print("Invalid option, try again! ")
+    # change view function to just throw all the dictonaries at the user when view is selected.
